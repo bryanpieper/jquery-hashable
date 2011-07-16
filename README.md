@@ -1,8 +1,8 @@
 jQuery Hashchange Event Plugin
 ==============================
 
-The jQuery hashchange event plugin allow you to bind to the "hashChange" event on your pages. The hashChange
-event occurs when the address hash value is changed user interaction with your page.
+The jQuery hashchange event plugin allows you to bind to the "hashChange" event on your pages. The hashChange
+event occurs when the address hash value changed by user interaction.
 
 Usage
 -----
