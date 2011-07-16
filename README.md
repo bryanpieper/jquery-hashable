@@ -24,7 +24,7 @@ Dependancies
 
  - jQuery 1.5+
 
-Optionally, the plugin will detect Modernizer (requires 2.0+) to verify if the current client
+Optionally, the plugin will detect Modernizr (requires 2.0+) to verify if the current client
 supports the "hashchange" event (html5).
 
 
