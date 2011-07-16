@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hashable jQuery Test : Event-based</title>	
+</head>
+<body>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.hashable.js"></script>
+	
+	<script type="text/javascript">
+		(function($) {
+
+			$(document).ready(function() {
+				
+				$(window).bind("hashChange", function(e, newHash, oldHash) {
+					console.log("new: " +  newHash);
+					console.log("old: " + oldHash);
+				});
+				
+				$(window).hashChange();
+
+			});
+			
+		})(jQuery);
+
+		function randomHash() {
+			window.location.hash = "#" + Math.floor(Math.random() * 9999);
+			return false;
+		}
+	</script>
+	
+	<a href="#" onclick="return randomHash();">Change Hash</a>
+	
+</body>
+</html>
