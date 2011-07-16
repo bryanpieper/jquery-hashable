@@ -7,16 +7,16 @@ event occurs when the address hash value is changed user interaction with your p
 Usage
 -----
 
-  <script type="text/javascript">
-  // the callback will receive the new and old hash values as arguments
-  $(window).hashChange(callbackFunction);
-   
-  // or you can bind to the "hashChange" event
-  $(window).bind("hashChange", function(e, newHash, oldHash) {
-    console.log("new: " +  newHash);
-    console.log("old: " + oldHash);
-  });
-  </script>
+    <script type="text/javascript">
+    // the callback will receive the new and old hash values as arguments
+    $(window).hashChange(callbackFunction);
+    
+    // or you can bind to the "hashChange" event
+    $(window).bind("hashChange", function(e, newHash, oldHash) {
+        console.log("new: " +  newHash);
+        console.log("old: " + oldHash);
+    });
+    </script>
 
 
 Dependancies
